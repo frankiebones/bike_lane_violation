@@ -64,13 +64,24 @@ There were 476,143 that contained a unique summons number and of those we end wi
 
 <b>Potential solutions to explore:</b><br>
 <sub>my current solutions seem to be related to allocating funds to improve safety, commercial delivery logistics within a densely populated city and traffic reduction...<br>I have no interest in exploring reduction of bike lane blockages with an increase of policing</sub>
-  - Could the fines, or a portion thereof, be used to add protected bike lanes in the areas that have the most violations<br>
-  - Could the fines, or a portion thereof, be used to add loading zones for commercial delivery in the areas/times that have the most commercial plate violations<br>
-  - Could the fines, or a portion thereof, be used to add bikes lanes (protected or not depending on the location) in commercial/manufacturing zones that are badly needed to safely connect existing cycling network infrastructure<br>
+  - Could the fines, or a portion thereof, be used to add:
+    - protected bike lanes in the areas that have the most violations<br>
+    - loading zones for commercial delivery in the areas/times that have the most commercial plate violations<br>
+    - bike lanes (protected or not depending on the location) in commercial/manufacturing zones that are badly needed to safely connect existing cycling network<br>
+    - public green space in underserved neighborhoods that are often adjacent to commercial districts<br>
 
 <b>Additional functionality when time permits:</b>
 - Airflow: weekly <i>as dataset is updated</i> API get, commit to DB, update visualizations
 - Flask: web app for viewing/exploring map and data based on year, plate type & precinct
+
+<b>The random question I wasn't looking for:</b>
+- Why are there so many vehicles with Indiana passenger plates blocking bike lanes in NYC? 
+  - lots of individuals skirting registration rules?
+  - some sort of ride share company doing the same?
+
+Now don't want to know?! Me too!
+
+<img src="https://user-images.githubusercontent.com/15967377/218372588-ade79462-53bb-4f4c-88e1-c65212438589.JPG" width="250">
 
 
 
