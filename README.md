@@ -6,8 +6,8 @@ Using [sodapy](https://github.com/xmunoz/sodapy) and [Socrata Query Language](ht
 We then examine all parking violation data related to [Code 48](https://www.nyc.gov/site/finance/vehicles/services-violation-codes.page)
 <i>`Stopping, standing or parking within a marked bicycle lane.`</i>
 
-This proof of concept is utilizing 512,775 records that matched "BIKE LANE" as the violation. This of course will grow in perpetuity.
-There were 461,799 that contained a unique summons number and of those we end with 459,485 that also have a valid precinct listed. 
+This proof of concept is utilizing 520,275 records that matched "BIKE LANE" as the violation. This of course will grow in perpetuity.
+There were 476,143 that contained a unique summons number and of those we end with 473,832 that also have a valid precinct listed. 
 
 
 <b>Some initial questions that I have already answered:</b>
@@ -25,11 +25,11 @@ There were 461,799 that contained a unique summons number and of those we end wi
 
 | Precinct  | QTY |
 | ------------- | ------------- |
-|34     |33,441|
-|33     |30,478|
-|9      |21,885|
-|28     |19,094|
-|14     |18,600|
+|34     |34,412|
+|33     |31,622|
+|9      |22,966|
+|28     |19,699|
+|14     |19,138|
       
 - What is the total fine amount for bike lane violations per borough and precinct<br>
 
@@ -43,20 +43,20 @@ There were 461,799 that contained a unique summons number and of those we end wi
 
 | Borough  | Total Fines |
 | ------------- | ------------- |
-| NY   | $31,124,813 |
-| The Bronx  | $8,763,608  |
-| Brooklyn   | $7,496,254 |
-| Queens  | $5,025,780 |
-| Staten Island  | $178,755|
+| NY   | $32,212,198 |
+| The Bronx  | $8,993,183  |
+| Brooklyn   | $7,666,344 |
+| Queens  | $5,169,510 |
+| Staten Island  | $183,105|
 
 - Which license types are most likely to be offenders<br>
 > While there are many license types listed, the majority are commercial and passenger. OMT is medallioned taxis.
 
 | License Type  | QTY |
 | ------------- | ------------- |
-|COM |   228818|
-|PAS    |194957|
-| OMT     |  11997  |
+|COM |   237,123|
+|PAS    |200,218|
+| OMT     |  12,144  |
 
 
 
