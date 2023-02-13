@@ -64,7 +64,8 @@ There were 476,143 that contained a unique summons number and of those we end wi
 - What time of day and day of week are bike lane violations most likely to occur<br>
 
 <b>Potential solutions to explore:</b><br>
-<sub>my current solutions seem to be related to allocating funds to improve safety, commercial delivery logistics within a densely populated city and traffic reduction...<br>I have no interest in exploring reduction of bike lane blockages with an increase of policing</sub>
+My current solutions seem to be related to allocating funds to improve safety, ease traffic and provide realistic options to alleviate strain on commercial delivery logistics within a densely populated city...<br>
+I have no interest in exploring reduction of bike lane blockages with an increase of policing.
   - Could the fines, or a portion thereof, be used to add:
     - protected bike lanes in the areas that have the most violations<br>
     - loading zones for commercial delivery in the areas/times that have the most commercial plate violations<br>
