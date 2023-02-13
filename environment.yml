@@ -1,0 +1,14 @@
+name: bike-env
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python==3.8
+  - geopandas
+  - mapclassify
+  - matplotlib
+  - seaborn
+  - cartopy
+  - psycopg2
+  - sqlalchemy
