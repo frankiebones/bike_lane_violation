@@ -1,14 +1,12 @@
 ![bike-lane-violations](https://user-images.githubusercontent.com/15967377/218348496-4ef7212b-4739-4ade-9d00-b5e691d7c11b.png)
 
 # bike_lane_violation
-Using [sodapy](https://github.com/xmunoz/sodapy) and [Socrata Query Language](https://dev.socrata.com/docs/queries/) we get results from NYC OpenData for [Open Parking and Camera Violations](https://data.cityofnewyork.us/City-Government/Open-Parking-and-Camera-Violations/nc67-uf89)<br>
-
-We then examine all parking violation data related to [Code 48](https://www.nyc.gov/site/finance/vehicles/services-violation-codes.page)
-<i>`Stopping, standing or parking within a marked bicycle lane.`</i>
+Using [sodapy](https://github.com/xmunoz/sodapy) and [Socrata Query Language](https://dev.socrata.com/docs/queries/) to get results from NYC OpenData for [Open Parking and Camera Violations](https://data.cityofnewyork.us/City-Government/Open-Parking-and-Camera-Violations/nc67-uf89) related to [Code 48](https://www.nyc.gov/site/finance/vehicles/services-violation-codes.page)
+<i>`Stopping, standing or parking within a marked bicycle lane.`</i><br>
+Findings will be mapped based on [Police Precinct](https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz)<br>
 
 This proof of concept is utilizing 520,275 records that matched "BIKE LANE" as the violation. This of course will grow in perpetuity.
-There were 476,143 that contained a unique summons number and of those we end with 473,832 that also have a valid precinct listed. 
-
+There were 476,143 that contained a unique summons number and of those we end with 473,832 that also have a valid precinct listed to do an analysis on. 
 
 <b>Some initial questions that I have already answered:</b>
 
@@ -58,11 +56,8 @@ There were 476,143 that contained a unique summons number and of those we end wi
 |PAS    |200,218|
 | OMT     |  12,144  |
 
-
-
-
 <b>Some of the questions to be answered next:</b>
-- What is the total reduction amount given based on license type<br>
+- What is the total fine reduction amount given based on license type<br>
 - Which license plates are the biggest repeat offenders<br>
 - What is the total mileage of bike lanes in each precinct<br>
 - What time of day and day of week are bike lane violations most likely to occur<br>
