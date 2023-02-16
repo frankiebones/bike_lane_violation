@@ -81,7 +81,7 @@ I have no interest in exploring reduction of bike lane blockages with an increas
   - lots of individuals skirting registration rules?
   - some sort of ride share company doing the same?
 
-Now don't want to know?! Me too!
+Now don't you want to know?! Me too!
 
 <img src="https://user-images.githubusercontent.com/15967377/218372588-ade79462-53bb-4f4c-88e1-c65212438589.JPG" width="250">
 
