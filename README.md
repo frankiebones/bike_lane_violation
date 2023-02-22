@@ -19,16 +19,17 @@ There were 476,143 that contained a unique summons number and of those we end wi
 
 | Borough  | QTY |
 | ------------- | ------------- |
-| NY   | 270515 |
+| Manhattan   | 270515 |
 | The Bronx  | 76179  |
 | Brooklyn   | 65170 |
 | Queens  | 43700 |
 | Staten Island  | 1555|
 
+The top 2 precincts are both located in the northern tip of Manhattan.<br><img src="https://user-images.githubusercontent.com/15967377/220728180-40e7c853-eb2d-49ca-8181-40da6ce77849.png" width="250"><br>
 | Precinct  | QTY |
 | ------------- | ------------- |
-|34     |34,412|
-|33     |31,622|
+|<b>34</b>     |<b>34,412</b>|
+|<b>33</b>     |<b>31,622</b>|
 |9      |22,966|
 |28     |19,699|
 |14     |19,138|
@@ -45,7 +46,7 @@ There were 476,143 that contained a unique summons number and of those we end wi
 
 | Borough  | Total Fines |
 | ------------- | ------------- |
-| NY   | $32,212,198 |
+| Manhattan    | $32,212,198 |
 | The Bronx  | $8,993,183  |
 | Brooklyn   | $7,666,344 |
 | Queens  | $5,169,510 |
