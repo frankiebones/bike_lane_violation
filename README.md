@@ -1,13 +1,16 @@
 
 ![map_legend1](https://user-images.githubusercontent.com/15967377/221370561-8ce3b289-9868-49ef-bd25-2966295545e8.png)
+<i>Map created in <a href="https://QGIS.org"><b>QGIS</b></a>  - a professional GIS application that is built on top of and proud to be itself Free and Open Source Software</i>
 
 # bike_lane_violation
 
-<a href="https://public.tableau.com/app/profile/frank.bucalo/viz/bike_lane_violations/Story1"><img src="https://img.shields.io/badge/Tableau-Click Here To View The Story On Tableau-E97627?style=flat-square&logo=Tableau&logoColor=white"></a>
+<a href="https://public.tableau.com/app/profile/frank.bucalo/viz/bike_lane_violations/Story1"><img src="https://img.shields.io/badge/Tableau-Click Here To View Tableau Story-E97627?style=flat-square&logo=Tableau&logoColor=white"></a>
 
-Using [sodapy](https://github.com/xmunoz/sodapy) and [Socrata Query Language](https://dev.socrata.com/docs/queries/) to get results from NYC OpenData for [Open Parking and Camera Violations](https://data.cityofnewyork.us/City-Government/Open-Parking-and-Camera-Violations/nc67-uf89) related to [Code 48](https://www.nyc.gov/site/finance/vehicles/services-violation-codes.page)
-<i>`Stopping, standing or parking within a marked bicycle lane.`</i><br>
-Findings will be mapped based on [Police Precinct](https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz)<br>
+Using [sodapy](https://github.com/xmunoz/sodapy) and [Socrata Query Language](https://dev.socrata.com/docs/queries/) <i>(SoQL)</i> we get records from NYC OpenData for [Open Parking and Camera Violations](https://data.cityofnewyork.us/City-Government/Open-Parking-and-Camera-Violations/nc67-uf89) related to <br><br>[Code 48](https://www.nyc.gov/site/finance/vehicles/services-violation-codes.page)
+<i>`Stopping, standing or parking within a marked bicycle lane.`</i><br><br>
+Records are all inserted into a [PostrgeSQL](https://www.postgresql.org/) database for futher exploratory analysis.<br><br>
+Using the [Python](https://www.python.org/) library [pandas](https://pandas.pydata.org/), the records are transformed, mostly by way of removing the Summons Image column which is not necessary for our analysis as well updating some data types to properly fit our schema.<br><br>
+Findings are then visualized based on [Police Precinct](https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz) with various python libraries such as [matplotlib](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) as well as geospatial libraries [geopandas](https://geopandas.org/en/stable/) and [geoplot](https://github.com/ResidentMario/geoplot). Further analysis, mapping and visualization was done with QGIS and Tableau.<br>
 
 This proof of concept is utilizing 520,275 records that matched "BIKE LANE" as the violation. This of course will grow in perpetuity.
 There were 476,143 that contained a unique summons number and of those we end with 473,832 that also have a valid precinct listed to do an analysis on. 
@@ -15,15 +18,17 @@ There were 476,143 that contained a unique summons number and of those we end wi
 <b>Some initial questions that I have already answered:</b>
 
 - Which boroughs and which precincts have the largest quantity of bike lane violations<br>
-> As one would expect, based on where the majority of current bike lane infranstructure exists, Manhattan has the largest quantity at 270,515. 
+> As one would expect, based on where the majority of current bike lane infranstructure exists, Manhattan has the largest quantity at 270,515.<br>
+
+![borough](https://user-images.githubusercontent.com/15967377/221424723-b93f57ff-47d8-49b7-984b-53d69fd138e6.JPG)
 
 | Borough  | QTY |
 | ------------- | ------------- |
-| Manhattan   | 270515 |
-| The Bronx  | 76179  |
-| Brooklyn   | 65170 |
-| Queens  | 43700 |
-| Staten Island  | 1555|
+| Manhattan (NY)  | 270515 |
+| The Bronx (BX) | 76179  |
+| Brooklyn (K)  | 65170 |
+| Queens (Q) | 43700 |
+| Staten Island (R)  | 1555|
 
 The top 2 precincts are both located in the northern tip of Manhattan.<br><img src="https://user-images.githubusercontent.com/15967377/220728180-40e7c853-eb2d-49ca-8181-40da6ce77849.png" width="250"><br>
 | Precinct  | QTY |
